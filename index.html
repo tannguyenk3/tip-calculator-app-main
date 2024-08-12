@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+      <div class="container" id="container">
+        <header>
+          <img src="images/logo.svg" alt="error-logo">
+        </header>
+
+        <section>
+          <div id="container-app" class="container-app">
+            <div class="left-side">
+              <div class="input-bill">
+                <span>Bill</span>
+                <input type="number" class="amount-money" id="amount-money" name="amount-money" placeholder="0">
+              </div>
+
+              <div class="option-tip">
+                <div class="select-tip">
+                  <span>Select Tip %</span>
+                </div>
+                
+                <div class="percent" id="percent">
+                  <div class="option-1">
+                    <button>5%</button>
+                  </div>
+                    
+                  <div class="option-2">
+                    <button>10%</button>
+                  </div>
+    
+                  <div class="option-3">
+                    <button>15%</button>
+                  </div>
+    
+                  <div class="option-4">
+                  <button>25%</button> 
+                  </div>
+    
+                  <div class="option-5">
+                    <button>50%</button>
+                  </div>
+    
+                  <div class="option-6">
+                    <input type="number" class="custom" id="custom" placeholder="Custom">
+                  </div>
+                </div>
+              </div>
+
+              <div class="number-people" id="number-people">
+                <span>Number of People</span>
+                <p class="error-message">Can't be zero</p>
+                <input type="number" class="amount-people" id="amount-people" placeholder="0">
+              </div>
+            </div>
+
+            <div class="right-side">
+              <div class="card-result">
+                <div class="tip-amount">
+                  <div class="tile-tip">
+                    <span>Tip Amount</span>
+                    <p>/ person</p>
+                  </div>
+                  <div class="result-money">
+                    <span class="amount">$0.00</span>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="tile-total">
+                    <span>Total</span>
+                    <p>/ person</p>
+                  </div> 
+                  <div class="result-money">
+                    <span class="amount">$0.00</span>
+                  </div>
+                </div>
+                <button class="btn-reset" id="btn-reset">reset</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+
+</body>
+<script src="index.js"></script>
+</html>
