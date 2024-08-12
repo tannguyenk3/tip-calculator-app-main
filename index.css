@@ -24,7 +24,6 @@
 }
 
 body {
-    width: 100%;
     background-color: var(--light-grayish-cyan);
 }
 
@@ -63,7 +62,18 @@ input {
     color: var(--very-dark-cyan);
     font-weight: 700;
     font-size: var(--form-input-font-size);
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+.icon-dollar {
+    position: absolute;
+    transform: translate(150%,-50%);
+}
+
+.icon-person {
+    position: absolute;
+    transform: translate(150%,-460%);
+}
 
 .amount-money:hover, .amount-people:hover {
     border: 2px solid var(--strong-cyan);
@@ -207,7 +217,7 @@ button.active {
     .container-app {
         border-radius: 10px;
         display: grid;
-        grid-template-columns: repeat(2,314px);
+        grid-template-columns: repeat(2,350px);
         gap: 35px
     }
 
